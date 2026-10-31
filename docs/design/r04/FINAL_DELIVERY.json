@@ -1,0 +1,12 @@
+{
+  "version": "V132 r04",
+  "pages": 33,
+  "document_checks": 27,
+  "docx": "01_docx/基于FPGA的多媒体广告牌_设计文档_V132_r04.docx",
+  "pdf": "02_pdf/基于FPGA的多媒体广告牌_设计文档_V132_r04.pdf",
+  "docx_sha256": "04cd6661371f9b0d2058510975cc4e3f0af01271289917346f675437510b5ce2",
+  "pdf_sha256": "a1ef6ae97a7c32fcbf607406e9f30ff00ef955236d1b2d26356eb118083953d0",
+  "final_acceptance": "PASS: user reported final functional tests, Flash and cold start 2026-10-31",
+  "publication": "PUBLIC source project; no private TF media; self-authored embedded examples",
+  "new_bitstream_generated": false
+}

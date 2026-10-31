@@ -1,0 +1,2 @@
+PASS v089_controls: OSD-short-chord/default-on/long-hold-auto-show/no-playlist/both-order/bounce/staggered-release/boot-held/clamps/reset; legacy controls: boot-held/bounce/release/chord/staggered-release/one-per-hold/clamps/no-playlist-in-edit/reset
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\scale_pipeline\tb_v089_controls.sv:43: $finish called at 16370000 (1ps)

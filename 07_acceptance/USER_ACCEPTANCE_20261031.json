@@ -1,0 +1,15 @@
+{
+  "version": "V132 original accepted configuration",
+  "recorded_date": "2026-10-31",
+  "evidence_type": "user_report",
+  "user_statement": "最后的全部测试都通过了 我已固化加冷启动",
+  "functional_tests": "PASS",
+  "flash_programming": "PASS",
+  "cold_start": "PASS",
+  "associated_recommended_bit_sha256": "a3b9554ccb61b5bc03b0800c68146b1d9e9e1cac42d36c2f81d6c7bc39f9f44a",
+  "identity_basis": "Latest recommended V132 artifact; user did not submit a fresh binary/flash-readback hash.",
+  "private_media_in_original": true,
+  "public_demo_build_hardware_acceptance": "NOT_CLAIMED",
+  "instrument_or_vendor_signoff": "Not established by this user report",
+  "scope": "User confirmation closes functional, Flash and cold-start acceptance; it does not certify PVT, formal SiP, instrument-measured power or end-to-end skew."
+}

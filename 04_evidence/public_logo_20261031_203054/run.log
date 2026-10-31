@@ -1,0 +1,2 @@
+PASS public logo all=8192 visible=1488 combinational/sync/compact equivalence, padded coordinates, one-clock latency
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\public_assets\tb_public_logo.sv:21: $finish called at 81926000 (1ps)

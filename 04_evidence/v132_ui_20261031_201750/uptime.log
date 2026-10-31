@@ -1,0 +1,2 @@
+PASS v102 registered second pulse BCD boundary tests=6; initialized rollover states, not 100-hour hardware endurance
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\ui\tb_v102_uptime.sv:18: $finish called at 640000 (1ps)

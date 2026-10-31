@@ -1,0 +1,53 @@
+{
+  "version": "v135 clean public export of V132 functionality",
+  "public_tests": [
+    {
+      "group": "v132_font_datapath_*",
+      "passed": true,
+      "summary": "04_evidence/v132_font_datapath_20261031_201445/summary.json"
+    },
+    {
+      "group": "v130_media_*",
+      "passed": true,
+      "summary": "04_evidence/v130_media_20261031_201750/summary.json"
+    },
+    {
+      "group": "v132_ui_*",
+      "passed": true,
+      "summary": "04_evidence/v132_ui_20261031_201750/summary.json"
+    },
+    {
+      "group": "v130_captions_*",
+      "passed": true,
+      "summary": "04_evidence/v130_captions_20261031_201418/summary.json"
+    },
+    {
+      "group": "public_logo_*",
+      "passed": true,
+      "summary": "04_evidence/public_logo_20261031_203054/summary.json"
+    }
+  ],
+  "all_selected_regressions_passed": true,
+  "source_scope": {
+    "passed": true,
+    "unchanged_hdl_and_constraints": 106,
+    "changed_embedded_data": [
+      "rtl/video/official_logo.v",
+      "rtl/visual/music_caption_config.vh",
+      "rtl/visual/music_caption_font_init.vh",
+      "rtl/visual/music_caption_meta_init.vh",
+      "rtl/visual/music_caption_text_init.vh",
+      "rtl/visual/official_logo_compact_sync.v"
+    ],
+    "missing_production_sources": [],
+    "active_synthesis_dependencies": 69,
+    "python_syntax_errors": [],
+    "active_top": "01_project/boards/idx_audio_visual_top.v",
+    "board": "VF-E20NG88 / EG4S20NG88 / 24 MHz",
+    "public_bitstream_rebuilt": false
+  },
+  "original_hardware_acceptance": "PASS per user 2026-10-31",
+  "public_example_hardware_acceptance": "NOT CLAIMED: embedded captions and Logo data changed; no new bitstream/programming this turn",
+  "original_private_media_included": false,
+  "failed_attempts_preserved": "Initial public logo TB event initialization failure retained with review and corrected rerun."
+}

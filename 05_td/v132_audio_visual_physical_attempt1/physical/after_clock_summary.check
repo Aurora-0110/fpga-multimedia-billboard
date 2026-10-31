@@ -1,0 +1,597 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(5) (HIGH)
+3. checking dummy node(3) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(0) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(0) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(0) (MEDIUM)
+10. checking no input delay(2) (MEDIUM)
+11. checking no output delay(7) (MEDIUM)
+12. checking partial input delay(0) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(33) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 5 local clocks. (HIGH)
+
+	clk24m
+	u_pll_sd/u_pll.clkc[0]
+	u_pll_vid/pll_pre.clkc[1]
+	u_pll_vid/pll_video.clkc[0]
+	u_pll_vid/pll_video.clkc[1]
+
+2.5 There are 5 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 3 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_LSLICE
+	real_tf$root_reg[23]_syn_4.c[0]
+	real_tf$loader/packer/req_data_reg[112]_syn_4.c[0]
+	real_tf$loader/packer/req_data_reg[67]_syn_4.c[0]
+	real_tf$loader/packer/req_data_reg[57]_syn_4.c[0]
+	real_tf$loader/packer/req_data_reg[120]_syn_4.c[0]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[21]_syn_4.c[0]
+	real_tf$loader/source/source/probe/candidate_size_reg[13]_syn_4.c[0]
+	real_tf$card/sel19_syn_1147.c[0]
+	real_tf$loader/source/source/pixels/fat_value_lo_reg[9]_syn_4.c[0]
+	analyze/levels_reg[94]_syn_4.c[0]
+	real_tf$loader/source/source/probe/fatsz_reg[2]_syn_4.c[0]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_367.c[1]
+	real_tf$loader/source/source/probe/bmp_size_reg[29]_syn_4.c[0]
+	real_tf$loader/source/source/probe/selected_start_reg[2]_syn_4.c[0]
+	real_tf$loader/source/source/probe/nfats_reg[1]_syn_4.c[1]
+	real_tf$loader/source/source/probe/bmp_size_reg[13]_syn_4.c[0]
+	real_tf$loader/source/source/probe/selected_size_reg[17]_syn_4.c[0]
+	real_tf$arbiter/al_reg[8]_syn_4.c[0]
+	real_tf$wav/reader/decode/left_hold_reg[15]_syn_4.c[0]
+	real_tf$wav/reader/decode/pcm_shift_reg[14]_syn_4.c[0]
+	pcm_source/receiver/left_reg[8]_syn_4.d[1]
+	pcm_source/receiver/left_hold_reg[13]_syn_4.d[1]
+	pcm_source/receiver/left_reg[8]_syn_4.b[1]
+	pcm_source/receiver/left_hold_reg[13]_syn_4.b[1]
+	real_tf$wav/reader/decode/left_hold_reg[15]_syn_4.d[0]
+	real_tf$wav/reader/decode/pcm_shift_reg[14]_syn_4.d[0]
+	pcm_source/receiver/left_reg[8]_syn_4.c[1]
+	pcm_source/receiver/left_hold_reg[13]_syn_4.c[1]
+	pcm_source/adjustable$gain/right_reg[17]_syn_4.d[0]
+	pcm_source/adjustable$gain/left_reg[23]_syn_4.d[0]
+	pcm_source/adjustable$gain/left_reg[23]_syn_4.d[1]
+	pcm_source/adjustable$gain/left_reg[19]_syn_4.d[0]
+	hdmi/ag[9]_syn_256.mi[0]
+	hdmi/ar[8]_syn_281.mi[0]
+	hdmi/audio$packets/s3_b2[51]_syn_30.mi[0]
+	hdmi/audio$packets/s3_b1[27]_syn_22.c[1]
+	hdmi/audio$packets/s3_b1[27]_syn_22.d[1]
+	help_ui/row_pre_reg[1]_syn_13.mi[0]
+	help_ui/base_reg[52]_syn_4.mi[0]
+	pipe/ctrl/state_reg[11]_syn_13.mi[0]
+	pipe/ctrl/state_reg[17]_syn_12.mi[0]
+	pipe/rp/g_falling$release_q_reg_syn_13.mi[1]
+	pipe/rs/g_falling$release_q_reg_syn_25.mi[0]
+	pipe/rs/g_falling$release_q_reg_syn_34.mi[0]
+	pipe/rs/g_falling$release_q_reg_syn_31.mi[1]
+	pipe/rs/g_falling$release_q_reg_syn_37.mi[0]
+	r0/g_rising$stages_reg[3]_syn_107.mi[0]
+	real_tf$card/spi/divider_b[6]_syn_10.mi[0]
+	r0/g_rising$stages_reg[3]_syn_78.mi[1]
+	r0/g_rising$stages_reg[3]_syn_70.mi[1]
+	r0/g_rising$stages_reg[3]_syn_73.mi[0]
+	real_tf$card/sel22_syn_291.mi[0]
+	r0/g_rising$stages_reg[3]_syn_94.mi[0]
+	r0/g_rising$stages_reg[3]_syn_109.mi[0]
+	spectrum/h_q_b2[3]_syn_22.mi[0]
+	analyze/mb_b1[2]_syn_4.mi[0]
+	analyze/mb_b1[7]_syn_4.mi[0]
+	analyze/mb_b1[4]_syn_4.mi[0]
+	analyze/mb_b1[1]_syn_4.mi[0]
+	analyze/ma_b1[11]_syn_6.mi[0]
+	analyze/ma_b1[6]_syn_6.mi[0]
+	analyze/ci_b1[9]_syn_65.mi[0]
+	r1/g_falling$release_q_reg_syn_527.mi[0]
+	r1/g_falling$release_q_reg_syn_527.mi[1]
+	r1/g_falling$release_q_reg_syn_482.mi[1]
+	analyze/ci_b1[9]_syn_69.mi[0]
+	hdmi/ag[9]_syn_220.mi[0]
+	hdmi/audio$packets/s1_b2[51]_syn_26.mi[0]
+	r1/g_falling$release_q_reg_syn_489.mi[1]
+	r1/g_falling$release_q_reg_syn_456.mi[0]
+	r1/g_falling$release_q_reg_syn_456.mi[1]
+	r1/g_falling$release_q_reg_syn_371.mi[0]
+	r1/g_falling$release_q_reg_syn_465.mi[1]
+	r1/g_falling$release_q_reg_syn_465.mi[0]
+	r1/g_falling$release_q_reg_syn_426.mi[1]
+	r1/g_falling$release_q_reg_syn_364.mi[1]
+	r1/g_falling$release_q_reg_syn_338.mi[1]
+	r1/g_falling$release_q_reg_syn_508.mi[0]
+	r1/g_falling$release_q_reg_syn_350.mi[1]
+	r1/g_falling$release_q_reg_syn_357.mi[0]
+	r1/g_falling$release_q_reg_syn_357.mi[1]
+	r1/g_falling$release_q_reg_syn_338.mi[0]
+	help_ui/sub15_syn_94.mi[0]
+	r1/g_falling$release_q_reg_syn_501.mi[0]
+	r1/g_falling$release_q_reg_syn_501.mi[1]
+	r1/g_falling$release_q_reg_syn_371.mi[1]
+	r1/g_falling$release_q_reg_syn_341.mi[1]
+	r1/g_falling$release_q_reg_syn_347.mi[1]
+	r1/g_falling$release_q_reg_syn_353.mi[0]
+	r1/g_falling$release_q_reg_syn_344.mi[1]
+	r1/g_falling$release_q_reg_syn_341.mi[0]
+	overlay/hb2_b[0]_syn_63.mi[0]
+	r1/g_falling$release_q_reg_syn_347.mi[0]
+	r1/g_falling$release_q_reg_syn_344.mi[0]
+	r1/g_falling$release_q_reg_syn_438.mi[0]
+	r1/g_falling$release_q_reg_syn_537.mi[0]
+	r1/g_falling$release_q_reg_syn_404.mi[1]
+	r1/g_falling$release_q_reg_syn_471.mi[0]
+	r1/g_falling$release_q_reg_syn_471.mi[1]
+	r1/g_falling$release_q_reg_syn_468.mi[1]
+	r1/g_falling$release_q_reg_syn_392.mi[0]
+	r1/g_falling$release_q_reg_syn_377.mi[1]
+	r1/g_falling$release_q_reg_syn_361.mi[1]
+	r1/g_falling$release_q_reg_syn_468.mi[0]
+	r1/g_falling$release_q_reg_syn_413.mi[0]
+	r1/g_falling$release_q_reg_syn_435.mi[1]
+	r1/g_falling$release_q_reg_syn_550.mi[0]
+	r1/g_falling$release_q_reg_syn_450.mi[0]
+	r1/g_falling$release_q_reg_syn_374.mi[1]
+	r1/g_falling$release_q_reg_syn_423.mi[1]
+	r1/g_falling$release_q_reg_syn_395.mi[0]
+	r1/g_falling$release_q_reg_syn_450.mi[1]
+	r1/g_falling$release_q_reg_syn_413.mi[1]
+	r1/g_falling$release_q_reg_syn_407.mi[0]
+	r1/g_falling$release_q_reg_syn_361.mi[0]
+	r1/g_falling$release_q_reg_syn_377.mi[0]
+	r1/g_falling$release_q_reg_syn_423.mi[0]
+	r1/g_falling$release_q_reg_syn_514.mi[1]
+	r1/g_falling$release_q_reg_syn_367.mi[1]
+	real_tf$wav/prst/g_rising$stages_reg[3]_syn_20.mi[0]
+	real_tf$wav/prst/g_rising$stages_reg[3]_syn_20.mi[1]
+	real_tf$wav/samples/rbin[9][0]_syn_8.mi[0]
+	real_tf$wav/samples/rbin[9][1]_syn_19.mi[0]
+	real_tf$wav/samples/rbin[9][0]_syn_8.mi[1]
+	real_tf$loader/packer/req_data_reg[120]_syn_4.d[0]
+	real_tf$loader/packer/req_data_reg[112]_syn_4.d[0]
+	real_tf$loader/packer/req_data_reg[57]_syn_4.d[0]
+	real_tf$loader/packer/req_data_reg[67]_syn_4.d[0]
+	real_tf$loader/source/source/pixels/fat_value_lo_reg[9]_syn_4.d[0]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[21]_syn_4.d[0]
+	analyze/levels_reg[94]_syn_4.d[0]
+	real_tf$card/sel19_syn_1147.d[0]
+	real_tf$loader/source/source/probe/candidate_size_reg[13]_syn_4.d[0]
+	real_tf$loader/source/source/probe/bmp_size_reg[13]_syn_4.d[0]
+	real_tf$loader/source/source/probe/nfats_reg[1]_syn_4.d[1]
+	real_tf$loader/source/source/probe/selected_start_reg[2]_syn_4.d[0]
+	real_tf$loader/source/source/probe/bmp_size_reg[29]_syn_4.d[0]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_367.d[1]
+	real_tf$arbiter/al_reg[8]_syn_4.d[0]
+	real_tf$root_reg[23]_syn_4.d[0]
+	real_tf$loader/source/source/probe/selected_size_reg[17]_syn_4.d[0]
+	real_tf$loader/source/source/probe/fatsz_reg[2]_syn_4.d[0]
+	spectrum/build_index_reg[3]_syn_19.mi[0]
+	spectrum/hb_b3[5]_syn_34.mi[0]
+	overlay/yy_reg[30]_syn_4.a[0]
+	overlay/yy_reg[30]_syn_4.b[0]
+	spectrum/update_band_reg[0]_syn_8.mi[0]
+	overlay/yy_reg[30]_syn_4.d[0]
+	overlay/yy_reg[30]_syn_4.c[0]
+	analyze/working_reg[119]_syn_4.c[1]
+	analyze/working_reg[119]_syn_4.c[0]
+	analyze/working_reg[119]_syn_4.d[1]
+	analyze/working_reg[119]_syn_4.d[0]
+	pcm_source/adjustable$gain/right_reg[17]_syn_4.c[0]
+	pcm_source/adjustable$gain/left_reg[23]_syn_4.c[0]
+	pcm_source/adjustable$gain/left_reg[23]_syn_4.c[1]
+	pcm_source/adjustable$gain/left_reg[19]_syn_4.c[0]
+
+DummyNode in Model: EG_PHY_MSLICE
+	real_tf$loader/source/bridge/scaler/interp/acc_reg[63]_syn_4.d[0]
+	real_tf$loader/source/bridge/scaler/interp/acc_reg[63]_syn_4.d[1]
+	real_tf$loader/source/source/probe/fatsz_reg[24]_syn_4.c[0]
+	real_tf$loader/source/bridge/scaler/interp/acc_reg[63]_syn_4.c[0]
+	real_tf$loader/source/bridge/scaler/interp/acc_reg[63]_syn_4.c[1]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_371.c[1]
+	real_tf$loader/source/bridge/scaler/interp/t1_reg[6]_syn_4.c[0]
+	real_tf$loader/source/bridge/scaler/p01_reg[7]_syn_4.c[0]
+	real_tf$loader/source/source/probe/parsed_height_b2[2]_syn_5.c[0]
+	real_tf$loader/source/source/pixels/mux103_syn_42.c[0]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[3]_syn_4.c[1]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[3]_syn_4.c[0]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_379.c[1]
+	real_tf$loader/source/source/pixels/fat_value_lo_reg[21]_syn_4.c[1]
+	real_tf$loader/source/source/probe/bmp_offset_reg[25]_syn_4.c[0]
+	real_tf$loader/source/source/probe/bmp_offset_reg[31]_syn_4.c[0]
+	pipe/reader/current_index_reg[1]_syn_4.c[0]
+	pcm_source/receiver/left_hold_reg[15]_syn_4.d[1]
+	pcm_source/receiver/left_reg[12]_syn_4.d[1]
+	pcm_source/receiver/left_reg[12]_syn_4.d[0]
+	pcm_source/receiver/left_reg[12]_syn_4.b[1]
+	pcm_source/receiver/left_hold_reg[15]_syn_4.b[1]
+	pcm_source/receiver/left_reg[12]_syn_4.b[0]
+	pipe/reader/current_index_reg[1]_syn_4.d[0]
+	analyze/ci_b1[9]_syn_67.c[0]
+	r1/g_falling$release_q_reg_syn_485.c[1]
+	analyze/ci_b1[9]_syn_90.c[1]
+	r1/g_falling$release_q_reg_syn_453.c[1]
+	pcm_source/receiver/left_hold_reg[15]_syn_4.c[1]
+	pcm_source/receiver/left_reg[12]_syn_4.c[1]
+	pcm_source/receiver/left_reg[12]_syn_4.c[0]
+	analyze/ci_b1[9]_syn_67.d[0]
+	r1/g_falling$release_q_reg_syn_485.d[1]
+	analyze/ci_b1[9]_syn_90.d[1]
+	r1/g_falling$release_q_reg_syn_453.d[1]
+	pcm_source/adjustable$gain/right_reg[18]_syn_4.d[0]
+	diagnostics/txp_reg[4]_syn_10.mi[0]
+	diagnostics/txp_reg[4]_syn_8.mi[0]
+	help_ui/previous_field_reg[1]_syn_4.d[0]
+	captions_clock/start_sample_reg[17]_syn_4.d[0]
+	help_ui/previous_field_reg[1]_syn_4.c[0]
+	captions_clock/start_sample_reg[17]_syn_4.c[0]
+	help_ui/previous_field_reg[1]_syn_4.a[0]
+	captions_clock/start_sample_reg[17]_syn_4.a[0]
+	help_ui/previous_field_reg[1]_syn_4.b[0]
+	captions_clock/start_sample_reg[17]_syn_4.b[0]
+	hdmi/ar[8]_syn_271.mi[0]
+	diagnostics/x_out_reg[11]_syn_4.a[0]
+	diagnostics/y_out_reg[2]_syn_4.a[1]
+	r1/g_falling$release_q_reg_syn_441.a[1]
+	r1/g_falling$release_q_reg_syn_441.a[0]
+	diagnostics/x_out_reg[11]_syn_4.b[0]
+	diagnostics/y_out_reg[2]_syn_4.b[1]
+	r1/g_falling$release_q_reg_syn_441.b[1]
+	r1/g_falling$release_q_reg_syn_441.b[0]
+	diagnostics/x_out_reg[11]_syn_4.d[0]
+	diagnostics/y_out_reg[2]_syn_4.d[1]
+	r1/g_falling$release_q_reg_syn_441.d[1]
+	r1/g_falling$release_q_reg_syn_441.d[0]
+	diagnostics/x_out_reg[11]_syn_4.c[0]
+	diagnostics/y_out_reg[2]_syn_4.c[1]
+	r1/g_falling$release_q_reg_syn_441.c[1]
+	r1/g_falling$release_q_reg_syn_441.c[0]
+	hdmi/audio$packets/frame_index_reg[2]_syn_19.mi[1]
+	hdmi/audio$packets/frame_index_reg[2]_syn_19.mi[0]
+	pipe/reader/next_data_reg[105]_syn_4.c[0]
+	pipe/reader/next_data_reg[105]_syn_4.d[0]
+	captions/yy_reg[10]_syn_4.mi[0]
+	help_ui/row_pre_reg[0]_syn_9.mi[1]
+	pipe/ctrl/state_reg[11]_syn_18.mi[0]
+	pipe/rp/g_falling$release_q_reg_syn_10.mi[0]
+	pipe/rs/g_falling$release_q_reg_syn_28.mi[0]
+	r0/g_rising$stages_reg[3]_syn_88.mi[1]
+	r0/g_rising$stages_reg[3]_syn_103.mi[1]
+	r0/g_rising$stages_reg[3]_syn_88.mi[0]
+	r0/g_rising$stages_reg[3]_syn_84.mi[0]
+	r1/g_falling$release_q_reg_syn_496.mi[1]
+	analyze/ci_b1[9]_syn_67.mi[0]
+	r1/g_falling$release_q_reg_syn_496.mi[0]
+	analyze/ma_b1[7]_syn_6.mi[0]
+	analyze/ci_b1[9]_syn_71.mi[0]
+	hdmi/ar[8]_syn_245.mi[0]
+	r1/g_falling$release_q_reg_syn_485.mi[1]
+	r1/g_falling$release_q_reg_syn_453.mi[1]
+	r1/g_falling$release_q_reg_syn_441.mi[1]
+	hdmi/audio$packets/e1_b[1]_syn_18.mi[0]
+	hdmi/audio$packets/s2_b2[51]_syn_24.mi[0]
+	r1/g_falling$release_q_reg_syn_546.mi[1]
+	r1/g_falling$release_q_reg_syn_520.mi[0]
+	r1/g_falling$release_q_reg_syn_474.mi[1]
+	r1/g_falling$release_q_reg_syn_542.mi[1]
+	r1/g_falling$release_q_reg_syn_565.mi[0]
+	r1/g_falling$release_q_reg_syn_398.mi[1]
+	r1/g_falling$release_q_reg_syn_446.mi[0]
+	r1/g_falling$release_q_reg_syn_462.mi[0]
+	r1/g_falling$release_q_reg_syn_446.mi[1]
+	r1/g_falling$release_q_reg_syn_542.mi[0]
+	hdmi/ab[8]_syn_45.mi[0]
+	r1/g_falling$release_q_reg_syn_432.mi[1]
+	r1/g_falling$release_q_reg_syn_398.mi[0]
+	r1/g_falling$release_q_reg_syn_511.mi[0]
+	r1/g_falling$release_q_reg_syn_505.mi[1]
+	r1/g_falling$release_q_reg_syn_505.mi[0]
+	r1/g_falling$release_q_reg_syn_529.mi[0]
+	r1/g_falling$release_q_reg_syn_389.mi[1]
+	r1/g_falling$release_q_reg_syn_417.mi[1]
+	r1/g_falling$release_q_reg_syn_389.mi[0]
+	r1/g_falling$release_q_reg_syn_386.mi[1]
+	r1/g_falling$release_q_reg_syn_386.mi[0]
+	r1/g_falling$release_q_reg_syn_459.mi[1]
+	r1/g_falling$release_q_reg_syn_401.mi[1]
+	r1/g_falling$release_q_reg_syn_459.mi[0]
+	r1/g_falling$release_q_reg_syn_429.mi[1]
+	r1/g_falling$release_q_reg_syn_429.mi[0]
+	r1/g_falling$release_q_reg_syn_559.mi[1]
+	r1/g_falling$release_q_reg_syn_420.mi[0]
+	r1/g_falling$release_q_reg_syn_477.mi[0]
+	r1/g_falling$release_q_reg_syn_477.mi[1]
+	r1/g_falling$release_q_reg_syn_524.mi[1]
+	r1/g_falling$release_q_reg_syn_524.mi[0]
+	r1/g_falling$release_q_reg_syn_410.mi[1]
+	real_tf$wav/prst/g_rising$stages_reg[3]_syn_24.mi[0]
+	real_tf$wav/prst/g_rising$stages_reg[2]_syn_4.mi[0]
+	real_tf$wav/srst/g_rising$stages_reg[3]_syn_20.mi[1]
+	real_tf$wav/srst/g_rising$stages_reg[3]_syn_14.mi[1]
+	real_tf$wav/srst/g_rising$stages_reg[3]_syn_17.mi[0]
+	real_tf$wav/srst/g_rising$stages_reg[3]_syn_20.mi[0]
+	real_tf$loader/source/bridge/scaler/interp/t1_reg[6]_syn_4.d[0]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_371.d[1]
+	real_tf$loader/source/bridge/scaler/p01_reg[7]_syn_4.d[0]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[3]_syn_4.d[0]
+	real_tf$loader/source/bridge/scaler/interp/b0_reg[3]_syn_4.d[1]
+	real_tf$loader/source/source/pixels/fat_value_lo_reg[21]_syn_4.d[1]
+	real_tf$loader/source/source/pixels/pixel_valid_reg_syn_379.d[1]
+	real_tf$loader/source/source/pixels/mux103_syn_42.d[0]
+	real_tf$loader/source/source/probe/parsed_height_b2[2]_syn_5.d[0]
+	real_tf$loader/source/source/probe/bmp_offset_reg[31]_syn_4.d[0]
+	real_tf$loader/source/source/probe/bmp_offset_reg[25]_syn_4.d[0]
+	real_tf$loader/source/source/probe/fatsz_reg[24]_syn_4.d[0]
+	spectrum/build_index_reg[3]_syn_21.mi[1]
+	spectrum/build_index_reg[3]_syn_24.mi[0]
+	spectrum/build_index_reg[3]_syn_24.mi[1]
+	spectrum/pb_b3[3]_syn_38.mi[0]
+	spectrum/build_index_reg[2]_syn_16.mi[0]
+	spectrum/pa_b3[4]_syn_28.mi[0]
+	real_tf$wav/reader/file_size_reg[0]_syn_4.a[0]
+	real_tf$wav/reader/file_size_reg[0]_syn_4.b[0]
+	spectrum/update_band_reg[1]_syn_13.mi[0]
+	real_tf$wav/reader/file_size_reg[0]_syn_4.d[0]
+	real_tf$wav/reader/file_size_reg[0]_syn_4.c[0]
+	real_tf$wav/reader/decode/left_hold_reg[19]_syn_4.c[1]
+	real_tf$wav/reader/decode/left_hold_reg[19]_syn_4.d[1]
+	pcm_source/adjustable$gain/right_reg[18]_syn_4.c[0]
+
+DummyNode in Model: EG_PHY_PAD
+	u_ram_syn_4.opad
+	u_ram_syn_10.opad
+	u_ram_syn_17.opad
+	u_ram_syn_36.opad
+	u_ram_syn_46.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: u_pll_sd/u_pll
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_pll_vid/pll_pre
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_pll_vid/pll_video
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There are 0 constraints that have no timing paths. (MEDIUM)
+
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 2 input ports that with no input delay specified. (MEDIUM)
+
+	key0_n
+	key1_n
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 7 output ports that with no output delay specified. (MEDIUM)
+
+	hdmi_clk_p
+	hdmi_d_p[2]
+	hdmi_d_p[1]
+	hdmi_d_p[0]
+	led_dout
+	led_latch
+	led_sclk
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 0 input ports with partial input delay specified. (MEDIUM)
+
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There are 33 abnormal set_input_delay constraints. (MEDIUM)
+
+	 set_input_delay -clock [get_clocks {u_pll_sd/u_pll.clkc[0]}] -max 8.0 [get_ports {tf_miso}]
+ set_input_delay -clock [get_clocks {u_pll_sd/u_pll.clkc[0]}] -min 0.0 [get_ports {tf_miso}]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[31]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[30]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[29]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[28]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[27]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[26]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[25]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[24]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[23]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[22]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[21]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[20]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[19]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[18]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[17]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[16]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[15]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[14]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[13]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[12]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[11]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[10]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[9]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[8]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[7]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[6]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[5]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[4]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[3]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[2]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[1]} ]
+	 set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -max 5.000 [ get_pins {u_ram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -fast -min 1.000 [ get_pins {u_ram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -max 5.000 [ get_pins {u_ram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {u_pll_sd/u_pll.clkc[0]} ] -reference_pin [ get_pins {u_ram.clk} ] -slow -min 1.000 [ get_pins {u_ram.dq[0]} ]
+

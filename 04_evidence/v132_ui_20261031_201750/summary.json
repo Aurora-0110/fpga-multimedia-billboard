@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "scope": "874 independent Chinese text vectors / full embedded font oracle / five full720p UI rasters including hidden and picture-gate-low / original gestures / uptime; simulation only, not hardware acceptance",
+  "complete": true,
+  "tests": [
+    {
+      "name": "uptime",
+      "passed": true,
+      "compile_returncode": 0,
+      "run_returncode": 0,
+      "elapsed_seconds": 0.172,
+      "source_sha256": {
+        "02_tests/ui/tb_v102_uptime.sv": "3e4d22a66427ac50b7a6a466fae1e980d1aa47d3b15c2202993b88c14d3e4304",
+        "01_project/rtl/visual/osd_layers_visual.v": "f616930674cbb6eb377bbc9c697dbd20029a91d3c6bcd2414e6234b4c0ce4dc3",
+        "01_project/rtl/visual/official_logo_compact_sync.v": "d97b95ed8b0eb042d9ce4054bcc5612eab4017da31537a3ab407ac814266d60a",
+        "01_project/rtl/video/osd_font.vh": "4dd3746d8065d8c468cd618aad1453178492d32ec19fc461001509462c4e0ee3"
+      },
+      "results": [
+        "PASS v102 registered second pulse BCD boundary tests=6; initialized rollover states, not 100-hour hardware endurance"
+      ]
+    },
+    {
+      "name": "controls",
+      "passed": true,
+      "compile_returncode": 0,
+      "run_returncode": 0,
+      "elapsed_seconds": 0.093,
+      "source_sha256": {
+        "02_tests/scale_pipeline/tb_v089_controls.sv": "6e0c194ab95e28581795828cbb303fb754788c0b10be9bc8bce2133082255965",
+        "01_project/rtl/common/picture_controls_osd.v": "24e3f969852f3f40dfd6cc38309bb912b92f32308a203fe393af47ccda127aa4",
+        "01_project/rtl/video/osd_font.vh": "4dd3746d8065d8c468cd618aad1453178492d32ec19fc461001509462c4e0ee3"
+      },
+      "results": [
+        "PASS v089_controls: OSD-short-chord/default-on/long-hold-auto-show/no-playlist/both-order/bounce/staggered-release/boot-held/clamps/reset; legacy controls: boot-held/bounce/release/chord/staggered-release/one-per-hold/clamps/no-playlist-in-edit/reset"
+      ]
+    },
+    {
+      "name": "ui",
+      "passed": true,
+      "compile_returncode": 0,
+      "run_returncode": 0,
+      "elapsed_seconds": 367.0,
+      "source_sha256": {
+        "02_tests/ui/tb_v132_ui.sv": "9a4cfb9a9028544904006edb4655b468efd788628be745295f5caaa26e32ebd9",
+        "01_project/rtl/visual/media_ui_overlay.v": "f7c00bed0d5647f15f865296acc981b63eea9df0878be399984aa0960fa3317a",
+        "01_project/rtl/video/osd_font.vh": "4dd3746d8065d8c468cd618aad1453178492d32ec19fc461001509462c4e0ee3",
+        "01_project/rtl/visual/media_ui_zh_glyph_ids.vh": "acf882cc0a713a845bf1813a3f771d5510434e5e0743d35aeb3add8d174d75c0",
+        "01_project/rtl/visual/media_ui_zh_font_init.vh": "47f14dcdf9a4df083fb5dab4e0e7289276739b84556aa1337baa23abede6433c",
+        "01_project/rtl/visual/media_ui_font_packed_v132.vh": "4e3aaa8d9e7335e7b57c9e3d8e6072f184c0163de9ac18d96c0359602d3cc67c",
+        "01_project/rtl/visual/media_ui_zh_text_init.vh": "f23800c4467e77f7e6dbd3e5bf6a10555df736a28e1e0a7e51856839169dae34",
+        "07_reference/fonts/noto_cjk/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+        "03_docs/v130_ui_font_spec.json": "aaaaa282c35dfd2d9c2a01b1663dd9cbf0268cd0c30135cd06633ab47fd8199b",
+        "tools/portable_v132/run_ui.py": "1c61a22e480fa571d39972e97be2afadcab533a765ae7dce00deceb792d963ca"
+      },
+      "results": [
+        "PASS v108 Chinese UI: 874 independent centered text cases / 106917 actual glyph cells / 2048 font rows / 4608015 aligned pixels, five720p rasters; timeout, snapshots, hidden wake, keys/edit/errors, no raised picture gate"
+      ]
+    }
+  ]
+}

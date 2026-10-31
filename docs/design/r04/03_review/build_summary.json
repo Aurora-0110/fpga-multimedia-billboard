@@ -1,0 +1,14 @@
+{
+  "input": "D:\\FPGA_Billboard\\documents\\design_v132_r04_20261031\\00_source\\基于FPGA的多媒体广告牌_设计文档_V130_r01_公开源稿.docx",
+  "output": "D:\\FPGA_Billboard\\documents\\design_v132_r04_20261031\\01_docx\\基于FPGA的多媒体广告牌_设计文档_V132_r04.docx",
+  "version": "V132 r04",
+  "geometry_preserved": true,
+  "figures": 10,
+  "tables": 15,
+  "references": 13,
+  "toc_fields": 3,
+  "repository_verified": true,
+  "public_source_media_preserved": true,
+  "claims": "Original V132 user-reported final functional, Flash and cold-start PASS; public data substitution is separately identified",
+  "docx_sha256": "9c23651c8bcb6b6ad25e54ff85159e5d150927dfc7643e7131ac2e1e6f2628ea"
+}

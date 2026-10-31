@@ -1,0 +1,30 @@
+{
+  "source_private_commit": "9df015c246304f6a5b942ef1f57295d353e03d89",
+  "public_source_root": "repository root",
+  "publication_scope": "Full current functional RTL, constraints, build/test source, font licenses, selected accepted-config physical reports. No private media or history objects.",
+  "regenerated_data": [
+    "music_caption_config.vh",
+    "music_caption_font_init.vh",
+    "music_caption_meta_init.vh",
+    "music_caption_text_init.vh",
+    "official_logo.v",
+    "official_logo_compact_sync.v"
+  ],
+  "excluded_classes": [
+    "TF media",
+    "original lyrics/timelines/transcripts",
+    "historical private bitstreams and netlist/db/flash",
+    "raw private screenshots/documents",
+    "unlicensed vendor simulation models",
+    "installers/licenses/credentials"
+  ],
+  "board": "VF-E20NG88 / EG4S20NG88 / 24 MHz",
+  "created_at": "2026-10-31T20:06:33.284189+08:00",
+  "excluded_data_helpers": [
+    "08_tools/prepare_v128_timeline.py"
+  ],
+  "public_logo": "Self-authored FPGA placeholder; original Anlogic TF artwork stays private; overlay algorithm is preserved.",
+  "initial_copy_files": 964,
+  "production_scope_check": "PUBLIC_TEST_STATUS.json",
+  "publication_date": "2026-10-31"
+}

@@ -1,0 +1,2 @@
+PASS v130 caption player checks=167265 real_events=10047 frozen=157214 cues=69 tracks=1,3 direct_1_3_2_1 all_boundaries
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\captions\tb_v130_caption_player.sv:70: $finish called at 1672650000 (1ps)

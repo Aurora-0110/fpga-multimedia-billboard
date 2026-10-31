@@ -1,0 +1,25 @@
+#--------------------------------------------------------------------------------
+# bringup.adc —— AN88_VIP (VF-E20NG88) 引脚约束：只包含 bringup_top 用到的端口
+#
+#   依据：HDK 原理图 AG88_VIP_Board_V1.0 + 官方 EGS20NG88_Board.adc
+#   注意：HDMI 与 KEY/595 同在 bank5/bank6，这两组 bank 的 VCCO 是 2.5V（HDMI 要 LVDS25），
+#         所以同 bank 的普通 IO 一律写 LVCMOS25，写 LVCMOS33 会报 bank 冲突（USR-8001）。
+#--------------------------------------------------------------------------------
+
+# ---- 24MHz 晶振 ----
+set_pin_assignment { clk24m } { LOCATION = P13; IOSTANDARD = LVCMOS33; }
+
+# ---- 按键（低有效）----
+set_pin_assignment { key_n[0] } { LOCATION = P51; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { key_n[1] } { LOCATION = P52; IOSTANDARD = LVCMOS25; }
+
+# ---- 74HC595 三线 ----
+set_pin_assignment { led_sclk } { LOCATION = P59; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { led_dout } { LOCATION = P45; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { led_latch } { LOCATION = P57; IOSTANDARD = LVCMOS25; }
+
+# ---- HDMI 输出（本板只引出 P 侧）----
+set_pin_assignment { hdmi_clk_p } { LOCATION = P47; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[0] } { LOCATION = P49; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[1] } { LOCATION = P55; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[2] } { LOCATION = P61; IOSTANDARD = LVDS25; }

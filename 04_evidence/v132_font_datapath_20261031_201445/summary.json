@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "complete": true,
+  "checks": 65536,
+  "source_sha256": {
+    "02_tests/ui_compact/tb_v132_font_datapath.sv": "635c0318844656f99d3193ca3d10168122432850d6904ee4e3699188ae4158ed",
+    "tools/portable_v132/run_font.py": "8f1a1af50dbd58e3ee7e1404ed45f187195346f52631de4227547b9562e5a768",
+    "03_docs/v130_ui_font_spec.json": "aaaaa282c35dfd2d9c2a01b1663dd9cbf0268cd0c30135cd06633ab47fd8199b",
+    "07_reference/fonts/noto_cjk/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+    "01_project/rtl/visual/media_ui_overlay.v": "f7c00bed0d5647f15f865296acc981b63eea9df0878be399984aa0960fa3317a",
+    "01_project/rtl/visual/media_ui_font_packed_v132.vh": "4e3aaa8d9e7335e7b57c9e3d8e6072f184c0163de9ac18d96c0359602d3cc67c",
+    "01_project/rtl/visual/media_ui_zh_text_init.vh": "f23800c4467e77f7e6dbd3e5bf6a10555df736a28e1e0a7e51856839169dae34",
+    "01_project/rtl/visual/media_ui_zh_glyph_ids.vh": "acf882cc0a713a845bf1813a3f771d5510434e5e0743d35aeb3add8d174d75c0"
+  },
+  "scope": "Independent Noto font raster verifies packed ROM data plus actual runtime word/bit/bank/override path; not hardware."
+}

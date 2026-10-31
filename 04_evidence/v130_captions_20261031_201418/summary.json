@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "complete": true,
+  "tests": [
+    {
+      "name": "player",
+      "passed": true,
+      "compile_rc": 0,
+      "sim_rc": 0,
+      "elapsed_seconds": 1.141,
+      "source_sha256": {
+        "02_tests/captions/tb_v130_caption_player.sv": "56cb801cdd5cf50dfa01011bd364741d8b5cd3e00af1604f871f2c99577834a3",
+        "01_project/rtl/visual/pcm_caption_player.v": "a4a939936ab2e234f0e23fb012cd4f9545d3a3585ed36112ba5d364c0af92cc6",
+        "01_project/rtl/visual/music_caption_config.vh": "d9b587dfb97fc81f111331e9d55647cec9170e98a9e5730ec5ef8be004005ce2",
+        "01_project/rtl/visual/music_caption_font_init.vh": "d163b9a910a49043f8502c32696d1d5dce25ad5129de7497a6fe533e1e0305d3",
+        "01_project/rtl/visual/music_caption_meta_init.vh": "e6185f90b843a8c4977c19333512a498d98495687859c11fe642209dd48ac5d9",
+        "01_project/rtl/visual/music_caption_text_init.vh": "7985d9a4cd3d85f3271024ffb81f30c38f6c221180c32bd070335c6ae8bf3912",
+        "01_project/rtl/visual/dft_cos_q10.vh": "67e9a3ad731969748913efd7ec56172bfdc57ff71e82ebbe25011894b564dfea",
+        "03_docs/v130_caption_spec.json": "bf2bc95406f2a6a355aa01b98e8cb4b01e3d96752e41049b263d91ff4b766d97",
+        "07_reference/fonts/chill_round/ChillRoundM.otf": "2c8da065414e3cab951744f15c25b17a9ab4ae93e48def22004bc917550d1219",
+        "tools/portable_v132/run_captions.py": "930fafc26d3e79d129c051eb175cebf3ad237f43d5b1fc2cd8656210e623129c",
+        "06_test_media/public_captions/music.txt": "0113e0ec7fdb6a96eaa99e97305ca6753b4eeb5e1d290304bdb3af47cf198cfd",
+        "06_test_media/public_captions/extra.txt": "49e1c981dd81a61f6fb581d1557a4705661899960ce74a2634294f2403cf4d6d"
+      },
+      "sources_unchanged": true,
+      "results": [
+        "PASS v130 caption player checks=167265 real_events=10047 frozen=157214 cues=69 tracks=1,3 direct_1_3_2_1 all_boundaries"
+      ]
+    },
+    {
+      "name": "pixels",
+      "passed": true,
+      "compile_rc": 0,
+      "sim_rc": 0,
+      "elapsed_seconds": 69.313,
+      "source_sha256": {
+        "02_tests/captions/tb_v130_caption_pixels.sv": "3f648032171d85a4a0fe2ce974e1e6ba9a29f069835871d1497bb66248a382af",
+        "01_project/rtl/visual/subtitle_overlay.v": "5870fa07e3247d5653f358c2c1db7a76aaf3666eed8444d01f980f2a71d61a03",
+        "01_project/rtl/visual/music_caption_config.vh": "d9b587dfb97fc81f111331e9d55647cec9170e98a9e5730ec5ef8be004005ce2",
+        "01_project/rtl/visual/music_caption_font_init.vh": "d163b9a910a49043f8502c32696d1d5dce25ad5129de7497a6fe533e1e0305d3",
+        "01_project/rtl/visual/music_caption_meta_init.vh": "e6185f90b843a8c4977c19333512a498d98495687859c11fe642209dd48ac5d9",
+        "01_project/rtl/visual/music_caption_text_init.vh": "7985d9a4cd3d85f3271024ffb81f30c38f6c221180c32bd070335c6ae8bf3912",
+        "01_project/rtl/visual/dft_cos_q10.vh": "67e9a3ad731969748913efd7ec56172bfdc57ff71e82ebbe25011894b564dfea",
+        "03_docs/v130_caption_spec.json": "bf2bc95406f2a6a355aa01b98e8cb4b01e3d96752e41049b263d91ff4b766d97",
+        "07_reference/fonts/chill_round/ChillRoundM.otf": "2c8da065414e3cab951744f15c25b17a9ab4ae93e48def22004bc917550d1219",
+        "tools/portable_v132/run_captions.py": "930fafc26d3e79d129c051eb175cebf3ad237f43d5b1fc2cd8656210e623129c",
+        "06_test_media/public_captions/music.txt": "0113e0ec7fdb6a96eaa99e97305ca6753b4eeb5e1d290304bdb3af47cf198cfd",
+        "06_test_media/public_captions/extra.txt": "49e1c981dd81a61f6fb581d1557a4705661899960ce74a2634294f2403cf4d6d"
+      },
+      "sources_unchanged": true,
+      "results": [
+        "PASS v130 caption pixels=4290876 white_glyph=236043 panel=1405728 clear=2885151 latency=4 no_progress_bar_no_DEMO frame_snapshot all_public_cues_all_displayed_glyphs"
+      ]
+    },
+    {
+      "name": "alignment",
+      "passed": true,
+      "compile_rc": 0,
+      "sim_rc": 0,
+      "elapsed_seconds": 0.5,
+      "source_sha256": {
+        "02_tests/captions/tb_v130_caption_alignment.sv": "95e6400d6eac8c0f7c36cc1400abc5829214d4c649eccb10ad52c5692cc6c780",
+        "01_project/rtl/visual/pcm_caption_player.v": "a4a939936ab2e234f0e23fb012cd4f9545d3a3585ed36112ba5d364c0af92cc6",
+        "01_project/rtl/visual/audio_pcm_frontend.v": "c540514c2b52e668634cdc6f768770c01ac06363879e3caf5321122c4e35b56e",
+        "01_project/rtl/audio/i2s_test_tone.v": "6f6d2861ce3846623871f7a97bbb5df8545be8b13a7349fae0fabe1ae05c796c",
+        "01_project/rtl/visual/music_caption_config.vh": "d9b587dfb97fc81f111331e9d55647cec9170e98a9e5730ec5ef8be004005ce2",
+        "01_project/rtl/visual/music_caption_font_init.vh": "d163b9a910a49043f8502c32696d1d5dce25ad5129de7497a6fe533e1e0305d3",
+        "01_project/rtl/visual/music_caption_meta_init.vh": "e6185f90b843a8c4977c19333512a498d98495687859c11fe642209dd48ac5d9",
+        "01_project/rtl/visual/music_caption_text_init.vh": "7985d9a4cd3d85f3271024ffb81f30c38f6c221180c32bd070335c6ae8bf3912",
+        "01_project/rtl/visual/dft_cos_q10.vh": "67e9a3ad731969748913efd7ec56172bfdc57ff71e82ebbe25011894b564dfea",
+        "03_docs/v130_caption_spec.json": "bf2bc95406f2a6a355aa01b98e8cb4b01e3d96752e41049b263d91ff4b766d97",
+        "07_reference/fonts/chill_round/ChillRoundM.otf": "2c8da065414e3cab951744f15c25b17a9ab4ae93e48def22004bc917550d1219",
+        "tools/portable_v132/run_captions.py": "930fafc26d3e79d129c051eb175cebf3ad237f43d5b1fc2cd8656210e623129c",
+        "06_test_media/public_captions/music.txt": "0113e0ec7fdb6a96eaa99e97305ca6753b4eeb5e1d290304bdb3af47cf198cfd",
+        "06_test_media/public_captions/extra.txt": "49e1c981dd81a61f6fb581d1557a4705661899960ce74a2634294f2403cf4d6d"
+      },
+      "sources_unchanged": true,
+      "results": [
+        "PASS v130 gain/caption alignment clocks=54032 exact_real_zero_and_muted_samples=234 pause_keepalive_does_not_count"
+      ]
+    }
+  ],
+  "enabled_cues": 69,
+  "tracks": [
+    1,
+    3
+  ],
+  "glyphs": 21,
+  "independent_font_text_metadata_oracle": true,
+  "public_source_timeline_verified": true,
+  "full_public_test_text_covered": true,
+  "original_lyrics_included": false,
+  "lossless_packed_glyphs_checked": true,
+  "scope": "Public test text, both banks real sample counters/pauses/mute/restart/AD clearing and accelerated cue endpoints. Independent720p glyph pixels with4cycle latency, full bank1 characters. Not audio listening or hardware acceptance."
+}

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "complete": true,
+  "tests": [
+    {
+      "name": "controls",
+      "passed": true,
+      "compile_rc": 0,
+      "sim_rc": 0,
+      "elapsed_seconds": 0.125,
+      "source_sha256": {
+        "02_tests/media_controls/tb_v130_controls.sv": "fbc2ffd6ce1361a0432c8a28c9424ad8b0887adfa68cd63dffe3df7b4cba903c",
+        "01_project/rtl/common/media_controls.v": "04773db5f1dc02fe920d60c75047c902cb035bfc9aa850dba91098928cb399c6",
+        "01_project/rtl/visual/subtitle_cues.vh": "e23d1eea7ffe769f4269ea84168a28b1aa5d237019c9ad4588687b1526ec15ab",
+        "01_project/rtl/visual/subtitle_font_init.vh": "f541aacb46987c1d9f5417031ec188cc71b6f76fd778d8c47444104e09563d5d",
+        "01_project/rtl/visual/subtitle_text_init.vh": "7a3b1b73e7269f27743067bf27f56d04db560cdc8a964c14f52aa0c486c9c9b9",
+        "01_project/rtl/visual/media_ui_font_packed_v132.vh": "4e3aaa8d9e7335e7b57c9e3d8e6072f184c0163de9ac18d96c0359602d3cc67c",
+        "01_project/rtl/visual/media_ui_zh_font_init.vh": "47f14dcdf9a4df083fb5dab4e0e7289276739b84556aa1337baa23abede6433c",
+        "01_project/rtl/visual/media_ui_zh_glyph_ids.vh": "acf882cc0a713a845bf1813a3f771d5510434e5e0743d35aeb3add8d174d75c0",
+        "01_project/rtl/visual/media_ui_zh_text_init.vh": "f23800c4467e77f7e6dbd3e5bf6a10555df736a28e1e0a7e51856839169dae34",
+        "tools/portable_v132/run_controls.py": "02663adb62f6c3645f30c44046423068a35af690fa44639c603d95ccffe01ed6",
+        "07_reference/fonts/noto_cjk/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+        "03_docs/v107_subtitle_spec.json": "83c7f1b9befb178ce755e9651401d1e55f6949fe3f6d4b5a4acbb603699b45cd"
+      },
+      "results": [
+        "PASS v130 media controls: short/long K0 K1, modal choice/wrap/retention, one-per-hold, bounce, both chord orders, early/late chord arbitration, staggered release, startup/reset, parameter clamps, no leaked image/mode action"
+      ]
+    },
+    {
+      "name": "ui_pin",
+      "passed": true,
+      "compile_rc": 0,
+      "sim_rc": 0,
+      "elapsed_seconds": 0.219,
+      "source_sha256": {
+        "02_tests/media_controls/tb_v130_ui_pin.sv": "254afb87f0c3d97ace08a55faea06cbf54b4eaff38f62075c94c240241e39e2f",
+        "01_project/rtl/common/media_controls.v": "04773db5f1dc02fe920d60c75047c902cb035bfc9aa850dba91098928cb399c6",
+        "01_project/rtl/visual/media_ui_overlay.v": "f7c00bed0d5647f15f865296acc981b63eea9df0878be399984aa0960fa3317a",
+        "01_project/rtl/visual/subtitle_cues.vh": "e23d1eea7ffe769f4269ea84168a28b1aa5d237019c9ad4588687b1526ec15ab",
+        "01_project/rtl/visual/subtitle_font_init.vh": "f541aacb46987c1d9f5417031ec188cc71b6f76fd778d8c47444104e09563d5d",
+        "01_project/rtl/visual/subtitle_text_init.vh": "7a3b1b73e7269f27743067bf27f56d04db560cdc8a964c14f52aa0c486c9c9b9",
+        "01_project/rtl/visual/media_ui_font_packed_v132.vh": "4e3aaa8d9e7335e7b57c9e3d8e6072f184c0163de9ac18d96c0359602d3cc67c",
+        "01_project/rtl/visual/media_ui_zh_font_init.vh": "47f14dcdf9a4df083fb5dab4e0e7289276739b84556aa1337baa23abede6433c",
+        "01_project/rtl/visual/media_ui_zh_glyph_ids.vh": "acf882cc0a713a845bf1813a3f771d5510434e5e0743d35aeb3add8d174d75c0",
+        "01_project/rtl/visual/media_ui_zh_text_init.vh": "f23800c4467e77f7e6dbd3e5bf6a10555df736a28e1e0a7e51856839169dae34",
+        "tools/portable_v132/run_controls.py": "02663adb62f6c3645f30c44046423068a35af690fa44639c603d95ccffe01ed6",
+        "07_reference/fonts/noto_cjk/NotoSansCJKsc-Medium.otf": "ca094f6b0001fb048ca39ddd797a0cdb0179e1e55c6561e111c49c3e6a61d7b7",
+        "03_docs/v107_subtitle_spec.json": "83c7f1b9befb178ce755e9651401d1e55f6949fe3f6d4b5a4acbb603699b45cd"
+      },
+      "results": [
+        "PASS v130 split-errors/audio-pause-hints + integrated gestures/UI: SHOW/CLOSE during play and pause, frame-crossing long hold, hidden source/image actions, no release reopen, real fault override/restore, no image/mode leakage"
+      ]
+    }
+  ],
+  "scope": "Fresh active media-control gestures and UI pin integration only; V128 sample captions tested separately. No hardware"
+}

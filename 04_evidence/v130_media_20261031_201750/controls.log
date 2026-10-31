@@ -1,0 +1,2 @@
+PASS v130 media controls: short/long K0 K1, modal choice/wrap/retention, one-per-hold, bounce, both chord orders, early/late chord arbitration, staggered release, startup/reset, parameter clamps, no leaked image/mode action
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\media_controls\tb_v130_controls.sv:69: $finish called at 53570000 (1ps)

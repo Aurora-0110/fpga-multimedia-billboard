@@ -1,0 +1,24 @@
+#--------------------------------------------------------------------------------
+# sdram_video.adc —— AN88_VIP (VF-E20NG88) 引脚约束：SDRAM 帧缓存 + HDMI 显示
+#
+#   与 bringup.adc 同一套引脚：HDMI 与 KEY/595 同在 bank5/bank6，VCCO=2.5V，
+#   所以同 bank 的普通 IO 必须写 LVCMOS25（写 LVCMOS33 会报 USR-8001 bank 冲突）。
+#--------------------------------------------------------------------------------
+
+# ---- 24MHz 晶振 ----
+set_pin_assignment { clk24m } { LOCATION = P13; IOSTANDARD = LVCMOS33; }
+
+# ---- 按键 ----
+set_pin_assignment { key_n[0] } { LOCATION = P51; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { key_n[1] } { LOCATION = P52; IOSTANDARD = LVCMOS25; }
+
+# ---- 74HC595 状态灯 ----
+set_pin_assignment { led_sclk }  { LOCATION = P59; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { led_dout }  { LOCATION = P45; IOSTANDARD = LVCMOS25; }
+set_pin_assignment { led_latch } { LOCATION = P57; IOSTANDARD = LVCMOS25; }
+
+# ---- HDMI 输出（只引出 P 侧）----
+set_pin_assignment { hdmi_clk_p } { LOCATION = P47; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[0] } { LOCATION = P49; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[1] } { LOCATION = P55; IOSTANDARD = LVDS25; }
+set_pin_assignment { hdmi_d_p[2] } { LOCATION = P61; IOSTANDARD = LVDS25; }

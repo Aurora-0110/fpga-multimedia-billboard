@@ -1,0 +1,2 @@
+PASS v130 gain/caption alignment clocks=54032 exact_real_zero_and_muted_samples=234 pause_keepalive_does_not_count
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\captions\tb_v130_caption_alignment.sv:53: $finish called at 540360000 (1ps)

@@ -1,0 +1,2 @@
+FATAL: D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\public_assets\tb_public_logo.sv:16: logo equivalence/latency x=          0 y=          0 a=x b=0 c=0
+       Time: 16000  Scope: tb_public_logo

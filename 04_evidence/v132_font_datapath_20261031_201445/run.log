@@ -1,0 +1,3 @@
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\01_project\rtl\visual\media_ui_overlay.v:296: warning: @* is sensitive to all 16 words in array 'font_row_decode'.
+PASS V132 runtime UI font datapath checks=65536; all128x16x16 coordinates, normal+dynamic override; unchanged glyph pixels
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\ui_compact\tb_v132_font_datapath.sv:28: $finish called at 655426000 (1ps)

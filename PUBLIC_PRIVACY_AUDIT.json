@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Current export including DOCX XML/media and rendered PDF text; private-lyric 8-character fragments, original private screenshot hashes, secret value patterns, disallowed payload suffixes and GitHub size limit.",
+  "scanned_files": 1074,
+  "private_text_hits": [],
+  "secret_or_excluded_payload_paths": [],
+  "original_private_image_or_embedded_payload_hits": [],
+  "over_100_MiB_files": [],
+  "original_media_not_distributed": true,
+  "new_history_required": true,
+  "original_private_repository_id": 1440801320,
+  "new_public_repository_id": 1440834306
+}

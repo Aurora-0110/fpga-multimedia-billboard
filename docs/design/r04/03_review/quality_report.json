@@ -1,0 +1,147 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Original section dimensions/margins/header/footer distances preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Sanitized public-source media bytes preserved",
+      "passed": true,
+      "detail": {
+        "original": 11,
+        "output": 11
+      }
+    },
+    {
+      "name": "Three live contents/list fields",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All ten figures use SEQ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All fifteen tables use SEQ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Figure/table body cross references",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every reference cited in body",
+      "passed": true,
+      "detail": 47
+    },
+    {
+      "name": "Citations are superscript internal hyperlinks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reference bookmarks and figure/table targets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Eight original editable equations preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No unrelated personal/school identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No revision tracking/comments",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No personal author metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All tables repeat header and prevent row splits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Three-line tables without vertical rules",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Correct V132 metrics and explicit user hardware acceptance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Use cases and we-subject reflection",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Current 2025 reference standard specified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Manual scenario matches K0/K1 controls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "UI V130 title not confused with firmware identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Verified public GitHub repository accurately described",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Accepted functional/Flash/cold-start states do not remain pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Public illustrations accurately identified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source of final acceptance and public-data distinction explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No broken Word fields in rendered PDF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No empty/two-line orphan pages",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Rendered document content matches final DOCX",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "pages": 33,
+  "input_sha256": "99edd360f56b67d53142389a2a3b133e38b24e000b67998d5fbfadb123d1c95f",
+  "output_sha256": "04cd6661371f9b0d2058510975cc4e3f0af01271289917346f675437510b5ce2",
+  "pdf_sha256": "a1ef6ae97a7c32fcbf607406e9f30ff00ef955236d1b2d26356eb118083953d0"
+}

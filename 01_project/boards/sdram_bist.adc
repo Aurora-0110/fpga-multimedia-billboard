@@ -1,0 +1,8 @@
+# v043 independent BIST; AG88_VIP_Board_V1.0.pdf p1: banks 1..7 wired D3V3.
+# Do NOT infer actual VCCIO=2.5V from LVDS25 naming in an HDMI constraint.
+set_pin_assignment { clk24m } { LOCATION = P13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { key0_n } { LOCATION = P51; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { led_sclk } { LOCATION = P59; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { led_dout } { LOCATION = P45; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { led_latch } { LOCATION = P57; IOSTANDARD = LVCMOS33; }
+

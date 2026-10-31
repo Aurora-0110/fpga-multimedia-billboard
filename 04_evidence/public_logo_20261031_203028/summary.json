@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "compile_rc": 0,
+  "sim_rc": 1,
+  "source_sha256": {
+    "02_tests/public_assets/tb_public_logo.sv": "77c36221bf93ad591460338c186cd8cdd160138c29dfa32f5a4dc832b9041b05",
+    "01_project/rtl/video/official_logo.v": "b7b6bdf77a1f42d669a106342a28663719ac8ab135c5a3d3f564f62216566a60",
+    "01_project/rtl/visual/official_logo_compact_sync.v": "ddf5d194835d976ab3e0fceb00a6e3e1bb39c590b3f3c1da2d21ec56ea3feb6d"
+  },
+  "scope": "Public self-authored logo interface/data equivalence, not hardware or new P&R"
+}

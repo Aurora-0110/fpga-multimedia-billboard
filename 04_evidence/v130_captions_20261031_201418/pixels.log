@@ -1,0 +1,2 @@
+PASS v130 caption pixels=4290876 white_glyph=236043 panel=1405728 clear=2885151 latency=4 no_progress_bar_no_DEMO frame_snapshot all_public_cues_all_displayed_glyphs
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\captions\tb_v130_caption_pixels.sv:67: $finish called at 42908830000 (1ps)

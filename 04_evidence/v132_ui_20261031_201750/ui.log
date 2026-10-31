@@ -1,0 +1,3 @@
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\01_project\rtl\visual\media_ui_overlay.v:296: warning: @* is sensitive to all 16 words in array 'font_row_decode'.
+PASS v108 Chinese UI: 874 independent centered text cases / 106917 actual glyph cells / 2048 font rows / 4608015 aligned pixels, five720p rasters; timeout, snapshots, hidden wake, keys/edit/errors, no raised picture gate
+D:\FPGA_Billboard\github\fpga-multimedia-billboard-public\02_tests\ui\tb_v132_ui.sv:163: $finish called at 52093530000 (1ps)
